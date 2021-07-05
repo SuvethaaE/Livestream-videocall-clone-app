@@ -7,16 +7,16 @@ import Notification from "./components/Notification";
 const useStyles = makeStyles((theme) => ({
   appBar: {
     borderRadius: 0,
-    margin: '50px 50px',
+    margin: '70px 50px',
     display: 'flex',
     fontsize: '2.0rem',
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
-    background:'rgb(37, 150, 190)',
-    color: 'black',
+    background:'#505AC9',
+    color: 'white',
     fontFamily:'Times New Roman',
-    width: '380px',
+    width: '450px',
     border: '2px solid black',
 
     [theme.breakpoints.down('xs')]: {
@@ -39,7 +39,7 @@ const App = () =>{
   <div className={obj.wrapper}>
      <AppBar className={obj.appBar} position="static" color="inherit">
     <Typography variant="h2" align="center">
-    VIDEO CALL
+    LIVE STREAM
     </Typography>
      </AppBar>
      <VideoPlay />
