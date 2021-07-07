@@ -1,7 +1,7 @@
 import React from 'react';
 import {MenuItems} from "./MenuItems";
 import './Navbar.css';
-import Schedule_list from "../WorkSchedule/Work";
+import ScheduleList from "../WorkSchedule/Work";
 import VideoPlay from "../VideoPlay";
 
 import { BrowserRouter as Router, Switch, Route,} from "react-router-dom";
@@ -43,7 +43,7 @@ import { BrowserRouter as Router, Switch, Route,} from "react-router-dom";
 <div>
 <Switch>
 <Route path="/schedule">
-  <Schedule_list />
+  <ScheduleList />
 </Route>
 <Route path="/">
 <VideoPlay />

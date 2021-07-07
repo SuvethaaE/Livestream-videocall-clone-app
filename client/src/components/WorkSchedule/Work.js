@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
-import ReactDOM from 'react-dom';
 import './Work.css';
-const Add_task=({addtask}) =>{
+const AddTask=({addtask}) =>{
   const [value,updatevalue] = useState("");
 
 const Task_submit = a =>{
@@ -25,7 +24,7 @@ return(
 );
 }
 
-const Schedule_list = () =>{
+const ScheduleList = () =>{
  const addtask = text =>update_task([...old_task,{text}]);
 const[old_task,update_task] = useState([
   {
@@ -68,10 +67,10 @@ return(
       <button onClick={()=> delete_task(index)}><i class = "material-icons">delete</i></button>
       </div>
      ))}
-    <Add_task addtask={addtask}/>
+    <AddTask addtask={addtask}/>
    </div>
    );
 }
-export default Schedule_list
-//ReactDOM.render(<Schedule_list />,document.getElementById('root'));
+export default ScheduleList
+//ReactDOM.render(<ScheduleList />,document.getElementById('root'));
 
