@@ -1,11 +1,12 @@
 import React, { useContext } from 'react';
-import { Grid, Typography, Paper, makeStyles } from '@material-ui/core';
-
+import { Grid, Typography, Paper, makeStyles, AppBar } from '@material-ui/core';
+import Option from "./Option";
+import Notification from "./Notification";
 import { SocketContext } from '../SocketContext';
 
 const useStyles = makeStyles((theme) => ({
   video: {
-    width: '750px',
+    width: '550px',
     [theme.breakpoints.down('xs')]: {
       width: '300px',
     },
@@ -23,11 +24,48 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+const useVideoStyles = makeStyles((theme) => ({
+  appBar: {
+    borderRadius: 0,
+    margin: '70px 50px',
+    display: 'flex',
+    fontsize: '2.0rem',
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+    background:'#505AC9',
+    color: 'white',
+    fontFamily:'Times New Roman',
+    width: '450px',
+    border: '2px solid black',
+
+    [theme.breakpoints.down('xs')]: {
+      width: '90%',
+    },
+  },
+image: {
+    marginLeft: '15px',
+  },
+wrapper: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    width: '100%',
+  },
+}));
+
 const VideoPlay = () => {
   const { name, callAccepted, myVideo, userVideo, callEnded, stream, call } = useContext(SocketContext);
   const classes = useStyles();
-
+  const obj = useVideoStyles();
   return (
+    
+      <div className={obj.wrapper}>
+      <AppBar className={obj.appBar} position="static" color="inherit">
+       <Typography variant="h2" align="center">
+    LIVE STREAM
+    </Typography>
+    </AppBar>
     <Grid container className={classes.gridContainer}>
       {stream && (
         <Paper className={classes.paper}>
@@ -45,7 +83,14 @@ const VideoPlay = () => {
           </Grid>
         </Paper>
       )}
-    </Grid>
+      </Grid>
+      <Option>
+<Notification />
+</Option>
+</div>
+    
+
+
   );
 };
 

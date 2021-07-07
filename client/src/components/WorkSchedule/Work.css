@@ -1,0 +1,62 @@
+body{
+  /* background-image: url("image.jpg"); */
+  background-repeat: repeat;
+  display: flex;
+  flex-direction: column;
+  font-size: 2.0rem;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: gainsboro;
+}
+h1{
+  color: darkgrey;
+  font-size: 4rem;
+  text-align: center;
+}
+.scheduled_list{
+ padding-top: 10px ;
+ width: 100px;
+ color: gainsboro;
+}
+.Scheduling_Status{
+  color:black;
+  text-indent: 18px;
+  font-size: 1.6rem;
+}
+.schedule-name{
+  cursor:pointer;
+}
+.completed-task{
+  color:black;
+  text-decoration: line-through;
+}
+button{
+  border:0;
+  cursor: pointer;
+  font-size: 18px;
+  outline:0;
+}
+.Scheduling_Status button{
+color:grey;
+}
+input{
+  background-color: aliceblue;
+  padding:7px 10px;
+  font-size:1rem;
+  color:black;
+  outline:0;
+  border:0;
+  flex:1;
+}
+form{
+  display:flex;
+  padding-top: 10px;
+}
+form button{
+  color: black;
+  background: white;
+  outline: 0;
+  padding: 0 10px;
+  width: 50px;
+}

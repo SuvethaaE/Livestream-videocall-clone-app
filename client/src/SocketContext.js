@@ -23,9 +23,10 @@ const ContextProvider = ({ children }) => {
     navigator.mediaDevices.getUserMedia({ video: true, audio: true })
       .then((currentStream) => {
         setStream(currentStream);
-
         myVideo.current.srcObject = currentStream;
-      });
+      }) .catch(function(err) {
+        console.log(err);
+     });
 
     socket.on('me', (id) => setMe(id));
 
