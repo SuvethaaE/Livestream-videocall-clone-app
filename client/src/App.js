@@ -1,11 +1,11 @@
 import React from "react";
 import './App.css';
 import Navbar from "./components/NavBar/Navbar";
-import { Typography, AppBar} from "@material-ui/core";
+//import { Typography, AppBar} from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
-import VideoPlay from "./components/VideoPlay";
-import Option from "./components/Option";
-import Notification from "./components/Notification";
+//import VideoPlay from "./components/VideoPlay";
+//import Option from "./components/Option";
+//import Notification from "./components/Notification";
 const useStyles = makeStyles((theme) => ({
   appBar: {
     borderRadius: 0,

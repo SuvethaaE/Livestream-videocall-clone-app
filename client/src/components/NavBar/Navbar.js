@@ -1,10 +1,10 @@
-import React,{Component} from 'react';
+import React from 'react';
 import {MenuItems} from "./MenuItems";
 import './Navbar.css';
 import Schedule_list from "../WorkSchedule/Work";
 import VideoPlay from "../VideoPlay";
 
-import { useHistory, Link, BrowserRouter as Router, Switch, Route,} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route,} from "react-router-dom";
 
     function Navbar() {
         const [state, setState] = React.useState({clicked:false})
