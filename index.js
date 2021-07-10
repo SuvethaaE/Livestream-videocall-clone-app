@@ -28,6 +28,11 @@ io.on('connection',(socket) => {
     });
 });
 
+
+app.get('/*', function(req,res) {
+    res.sendFile(path.join(__dirname, 'build', 'index.html'));
+});
+
 server.listen(PORT, () => console.log(`Server listening on the port ${PORT}`));
 
 

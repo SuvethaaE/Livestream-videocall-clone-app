@@ -20,7 +20,7 @@ import { BrowserRouter as Router, Switch, Route,} from "react-router-dom";
        return(
          <div>
            <nav className="Nav1">
-            <h1 className="Nav2">SUVECAM<i className="Nav4"></i></h1>
+            <h2 className="Nav2">LIVE STREAM<i className="Nav4"></i></h2>
             <div className="Nav3" onClick={handleClick}>
            <i className={state.clicked? 'fas fa-times' : 'fas fa-bars' }></i>
             </div>

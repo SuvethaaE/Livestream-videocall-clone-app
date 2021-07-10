@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
       },
     },
     container: {
-      width: '600px',
+      width: '450px',
       margin: '35px 0',
       padding: 0,
       [theme.breakpoints.down('xs')]: {
@@ -51,7 +51,7 @@ const Option = ({children}) =>{
                   {console.log(me)}
                   <CopyToClipboard text={me} className={classes.margin}>
                      <Button variant ="contained" color="primary" fullWidth startIcon={<Assignment fontSize="large" />}>
-                     Copy your Id
+                     Your ID
                      </Button>
                   </CopyToClipboard>
                  </Grid>

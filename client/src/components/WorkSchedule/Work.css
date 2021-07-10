@@ -11,7 +11,7 @@ body{
 }
 h1{
   color: darkgrey;
-  font-size: 4rem;
+  font-size: 2rem;
   text-align: center;
 }
 .scheduled_list{
@@ -21,8 +21,8 @@ h1{
 }
 .Scheduling_Status{
   color:black;
-  text-indent: 18px;
-  font-size: 1.6rem;
+  text-indent: 10px;
+  font-size: 1.0rem;
 }
 .schedule-name{
   cursor:pointer;
@@ -34,7 +34,7 @@ h1{
 button{
   border:0;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 20px;
   outline:0;
 }
 .Scheduling_Status button{
@@ -50,8 +50,9 @@ input{
   flex:1;
 }
 form{
-  display:flex;
+  display:inline-flex;
   padding-top: 10px;
+  width: fit-content;
 }
 form button{
   color: black;

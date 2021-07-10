@@ -6,7 +6,7 @@ import { SocketContext } from '../SocketContext';
 
 const useStyles = makeStyles((theme) => ({
   video: {
-    width: '550px',
+    width: '500px',
     [theme.breakpoints.down('xs')]: {
       width: '300px',
     },
@@ -36,7 +36,7 @@ const useVideoStyles = makeStyles((theme) => ({
     background:'#505AC9',
     color: 'white',
     fontFamily:'Times New Roman',
-    width: '450px',
+    width: '330px',
     border: '2px solid black',
 
     [theme.breakpoints.down('xs')]: {
@@ -62,8 +62,7 @@ const VideoPlay = () => {
     
       <div className={obj.wrapper}>
       <AppBar className={obj.appBar} position="static" color="inherit">
-       <Typography variant="h2" align="center">
-    LIVE STREAM
+       <Typography variant="h3" align="center">VIDEO CALL 
     </Typography>
     </AppBar>
     <Grid container className={classes.gridContainer}>
